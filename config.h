@@ -66,11 +66,11 @@ static const char unknown_str[] = "n/a";
 static const struct arg args[] = {
 	/* function format          argument */
 	{ battery_perc, "[%s%%] ",    "BAT1" },
-	{ run_command, "[B:%s] ",    "brightnessctl i | grep % | awk '{print$4}' | sed 's/(//' | sed 's/)//'" },
 	{ netspeed_tx, "[Up:%sB] ",  "wlp2s0" },
 	{ netspeed_rx, "[Down:%sB] ",  "wlp2s0" },
 	{ ram_perc, "[R:%s%%] ",    "NULL" },
 	{ cpu_perc, "[C:%s%%] ",    "NULL" },
 	{ disk_perc, "[D:%s%%] ",    "/" },
+	{ run_command, "[B:%s] ",    "brightnessctl i | grep % | awk '{print$4}' | sed 's/(//' | sed 's/)//'" },
 	{ datetime,   "%s",    "%a,%b %d,%T" },
 };
